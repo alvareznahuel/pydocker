@@ -1,1 +1,1 @@
-docker build . -t hello-python
+docker build .  -t hello-python
