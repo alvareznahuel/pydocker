@@ -17,4 +17,16 @@ Configuración para desarrollar y probar python sobre docker.
         },
         ...
     ]
-      
+
+# Mejoras al proceso de DEBUG.
+
+Se incorpora una variable de entorno para habilitar el DEBUG remoto.
+Inicialmente se definieron dos entornos posibles:
+
+- normal.env: Ejecuta normalmente el script.
+- debug.env: Espera la conexión del debugger y su posterior desconexión. Por el momento no soporta el reiniciar la ejecución desde el debugger.
+
+A partir de estos cambios la forma correcta de ejecutar el docker es con:
+
+./run.sh archivo.env
+
