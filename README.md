@@ -10,7 +10,7 @@ Configuración para desarrollar y probar python sobre docker.
             "type": "python",
             "request": "attach",
             "localRoot": "${workspaceFolder}",
-            "remoteRoot": "${workspaceFolder}",
+            "remoteRoot": "/usr/src/app",
             "port": 3000,
             "secret": "my_secret",
             "host": "localhost"
